@@ -1,0 +1,6 @@
+:cachedir: 'cache/r10k'
+
+:sources:
+  :base:
+    remote: '/home/vagrant/shared/repo/puppet/'
+    basedir: 'environments'

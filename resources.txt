@@ -1,0 +1,5 @@
+https://techpunch.co.uk/development/how-to-build-a-puppet-repo-using-r10k-with-roles-and-profiles
+https://lists.centos.org/pipermail/centos-announce/2016-July/021984.html
+https://www.slashroot.in/puppet-hiera-tutorial-example-configuration
+https://linuxacademy.com/blog/linux/vagrant-cheat-sheet-get-started-with-vagrant/
+https://www.howtoforge.com/tutorial/how-to-setup-puppet-master-and-agent-on-centos-7/
