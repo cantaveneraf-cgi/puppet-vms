@@ -1,6 +1,10 @@
 :cachedir: 'cache/r10k'
+#:git:
+#  private_key: "/etc/ssh-key/id_rsa"
 
 :sources:
+  # This will clone the git repository and instantiate an environment per
+  # branch in /etc/puppetlabs/code/environments
   :base:
     remote: '/home/vagrant/shared/repo/puppet/'
-    basedir: 'environments'
+    basedir: '/etc/puppetlabs/code/environments'
