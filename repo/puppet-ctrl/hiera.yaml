@@ -1,10 +1,13 @@
 ---
-:backends: 
-  - yaml
+version: 5
 
-:yaml:
-  :datadir: /etc/puppetlabs/code/environments/%{environment}/hiera
+defaults:
+    datadir: /etc/puppet/code/environments/%{environment}/hiera
+    data_hash: yaml_data
 
-:hierarchy:
-  - "nodes/%{::fqdn}"
-  - common
+hierarchy:
+    - name: "Host-specific data"
+      path: "nodes/%{facts.hostname}.yaml"
+
+    - name: "Common defaults"
+      path: "common.yaml"

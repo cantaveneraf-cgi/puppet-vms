@@ -1,0 +1,10 @@
+---
+:backends: 
+  - yaml
+
+:yaml:
+  :datadir: /etc/puppet/code/environments/%{environment}/hiera
+
+:hierarchy:
+  - "nodes/%{::fqdn}"
+  - common
