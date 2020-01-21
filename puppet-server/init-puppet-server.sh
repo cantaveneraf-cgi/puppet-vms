@@ -14,12 +14,12 @@ echo [INIT] start puppet server
 sudo systemctl start puppetserver && systemctl enable puppetserver
 
 echo [INIT] Install r10k
-sudo /opt/puppetlabs/puppet/bin/gem install gpgme --no-rdoc --no-ri
-sudo /opt/puppetlabs/puppet/bin/gem install hiera-eyaml-gpg --no-rdoc --no-ri
+#sudo /opt/puppetlabs/puppet/bin/gem install gpgme --no-rdoc --no-ri
+#sudo /opt/puppetlabs/puppet/bin/gem install hiera-eyaml-gpg --no-rdoc --no-ri
 sudo /opt/puppetlabs/puppet/bin/gem install r10k --no-rdoc --no-ri
 
 echo [INIT] Link the Control Repo in /etc/puppet
 sudo ln -s /home/vagrant/shared/repo/puppet-ctrl/ /etc/puppet
 
-echo [INIT] Checkout the Puppet Repo in /etc/puppet/code/environments/ (see basedir in r10k.yaml and hiera.yaml)
+echo [INIT] Checkout the Puppet Repo in /etc/puppet/code/environments/ see basedir in r10k.yaml and hiera.yaml
 sudo /etc/puppet/./r10k-deploy.sh
