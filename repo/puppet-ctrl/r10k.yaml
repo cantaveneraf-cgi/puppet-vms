@@ -4,7 +4,7 @@
 
 :sources:
   # This will clone the git repository and instantiate an environment per
-  # branch in /etc/puppet/code/environments
+  # branch in /etc/puppetlabs/code/environments
   :base:
     remote: 'https://github.com/cantaveneraf-cgi/puppet-repo.git'
-    basedir: '/etc/puppet/code/environments'
+    basedir: '/etc/puppetlabs/code/environments'
